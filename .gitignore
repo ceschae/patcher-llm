@@ -1,3 +1,12 @@
+# custom git ignored things
+
+.venv/
+ch5/gpt2/
+ch5/model_and_optimizer.pth
+ch5/model.pth
+
+# built-in python ignored things
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
