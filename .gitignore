@@ -1,9 +1,13 @@
 # custom git ignored things
 
 .venv/
-ch5/gpt2/
+*/gpt2/
+
+# big files found with
+#   find . -size +100M | cat >> .gitignore
 ch5/model_and_optimizer.pth
 ch5/model.pth
+ch6/review_classifier.pth
 
 # built-in python ignored things
 
