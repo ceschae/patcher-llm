@@ -306,9 +306,9 @@ print(compute_accuracy(model, train_loader))
 
 # saving and loading models
 
-torch.save(model.state_dict(), "model.pth")
+torch.save(model.state_dict(), "appendix-a-model.pth")
 model = NeuralNetwork(2, 2)
-model.load_state_dict(torch.load("model.pth"))
+model.load_state_dict(torch.load("appendix-a-model.pth"))
 
 # prints False 
 # editor's note: on my computer, a macbook M2
