@@ -1,4 +1,5 @@
-from ch4 import create_dataloader_v1, GPTModel
+from ch2 import create_dataloader_v1
+from ch4 import GPTModel
 
 from gpt_download import download_and_load_gpt2
 from matplotlib.ticker import MaxNLocator

@@ -438,7 +438,7 @@ GPT_CONFIG_124M = {
     "qkv_bias": False
 }
 
-class TransformerBlock(nn.Module):
+class TransformerBlockFineGrained(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.att = MultiHeadAttention(
@@ -468,7 +468,7 @@ class TransformerBlock(nn.Module):
         x = x + shortcut
         return x
 
-class GPTModel(nn.Module):
+class GPTModelFineGrained(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.tok_emb = nn.Embedding(cfg["vocab_size"], cfg["emb_dim"])
